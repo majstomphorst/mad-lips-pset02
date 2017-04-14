@@ -14,7 +14,6 @@
 		2899A3131E9CFEBE006464EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2899A3111E9CFEBE006464EC /* LaunchScreen.storyboard */; };
 		28EE5B211E9FA85C00F6A80E /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EE5B201E9FA85C00F6A80E /* Story.swift */; };
 		28F7AB8B1EA0D24E00E3B4CB /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F7AB8A1EA0D24E00E3B4CB /* assets.xcassets */; };
-		28F7AB8D1EA0F53F00E3B4CB /* 03-ViewController-story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7AB8C1EA0F53F00E3B4CB /* 03-ViewController-story.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		2899A3141E9CFEBE006464EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28EE5B201E9FA85C00F6A80E /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		28F7AB8A1EA0D24E00E3B4CB /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
-		28F7AB8C1EA0F53F00E3B4CB /* 03-ViewController-story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "03-ViewController-story.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,6 @@
 				2899A3081E9CFEBE006464EC /* AppDelegate.swift */,
 				2899A30A1E9CFEBE006464EC /* ViewController.swift */,
 				284309981E9D022E003CA21A /* 02-ViewController-UserInput.swift */,
-				28F7AB8C1EA0F53F00E3B4CB /* 03-ViewController-story.swift */,
 				28F7AB8A1EA0D24E00E3B4CB /* assets.xcassets */,
 				2899A30C1E9CFEBE006464EC /* Main.storyboard */,
 				2899A3111E9CFEBE006464EC /* LaunchScreen.storyboard */,
@@ -150,7 +147,6 @@
 				284309991E9D022E003CA21A /* 02-ViewController-UserInput.swift in Sources */,
 				2899A3091E9CFEBE006464EC /* AppDelegate.swift in Sources */,
 				28EE5B211E9FA85C00F6A80E /* Story.swift in Sources */,
-				28F7AB8D1EA0F53F00E3B4CB /* 03-ViewController-story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,10 +34,12 @@ class ViewController: UIViewController {
             print(p)
         }
 
-        
-        
+        print(story.getNextPlaceholder())
         story.fillInPlaceholder(word: "01")
         print(story.isFilledIn())
+        
+        
+        print(story.getNextPlaceholder())
         story.fillInPlaceholder(word: "02")
         print(story.isFilledIn())
         i = story.getPlaceholderCount()

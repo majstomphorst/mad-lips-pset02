@@ -88,7 +88,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jEK-SU-G9Z">
                                 <rect key="frame" x="20" y="64" width="374" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yry-z2-pVw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please give me a &quot;placeholder&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yry-z2-pVw">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -126,24 +126,6 @@
                 </label>
             </objects>
             <point key="canvasLocation" x="1651" y="38"/>
-        </scene>
-        <!--View Controller story-->
-        <scene sceneID="jlP-3N-BYf">
-            <objects>
-                <viewController id="MAH-qg-Yec" customClass="_3_ViewController_story" customModule="mad_lips___pset02" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9jt-Wo-wgt"/>
-                        <viewControllerLayoutGuide type="bottom" id="uCu-lg-7dF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TMB-mG-ok7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lCn-gb-hpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2372" y="38"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Asl-eG-aLq">

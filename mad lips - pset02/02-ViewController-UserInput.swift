@@ -11,7 +11,6 @@ import UIKit
 class _2_ViewController_userinput: UIViewController {
 
     
-    
     // MARK: propertys
     // making a list to store the users words in.
     var words = [String]()

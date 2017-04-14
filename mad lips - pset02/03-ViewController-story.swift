@@ -6,7 +6,6 @@
 //  Copyright © 2017 M.a.j©. All rights reserved.
 //
 
-//git
 
 import UIKit
 
