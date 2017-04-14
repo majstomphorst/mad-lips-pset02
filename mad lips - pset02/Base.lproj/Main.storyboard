@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3af-oG-gDX">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mad_lips___pset02" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XLF-vl-CtU">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mQZ-FJ-wRG">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="616"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madlibs" translatesAutoresizingMaskIntoConstraints="NO" id="wrp-hE-Xpz">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="308"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" maximumZoomScale="10" editable="NO" text="text works!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9u9-pk-srA">
+                                                <rect key="frame" x="0.0" y="308" width="414" height="308"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="horizontal"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jy4-Am-dBP">
+                                        <rect key="frame" x="0.0" y="616" width="414" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Jy4-Am-dBP" secondAttribute="height" multiplier="207:28" id="6eu-Nr-Q1i"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="b7f-ev-Knz" kind="show" id="BZe-aU-Q2Z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Jy4-Am-dBP" firstAttribute="leading" secondItem="XLF-vl-CtU" secondAttribute="leading" id="jdv-zh-UBr"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jy4-Am-dBP" secondAttribute="bottom" id="soh-Fd-tb9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jy4-Am-dBP" secondAttribute="trailing" id="zGe-i0-fnT"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XLF-vl-CtU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="19z-6o-p8k"/>
+                            <constraint firstAttribute="bottom" secondItem="XLF-vl-CtU" secondAttribute="bottom" id="CJZ-TY-cRJ"/>
+                            <constraint firstAttribute="trailing" secondItem="XLF-vl-CtU" secondAttribute="trailing" id="IIs-j4-tO3"/>
+                            <constraint firstItem="XLF-vl-CtU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="xiM-mz-GuC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eLs-Sw-40R"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975.20000000000005" y="38.23088455772114"/>
+        </scene>
+        <!--View Controller userinput-->
+        <scene sceneID="zum-Jl-pRg">
+            <objects>
+                <viewController id="b7f-ev-Knz" customClass="_2_ViewController_userinput" customModule="mad_lips___pset02" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f0j-cF-MUv"/>
+                        <viewControllerLayoutGuide type="bottom" id="HOk-dH-TJe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nqo-ib-9QN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jEK-SU-G9Z">
+                                <rect key="frame" x="20" y="64" width="374" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yry-z2-pVw">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5B-Wl-vek">
+                                        <rect key="frame" x="0.0" y="35" width="374" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCk-tG-0hg">
+                                        <rect key="frame" x="0.0" y="70" width="374" height="30"/>
+                                        <state key="normal" title="Submite"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jEK-SU-G9Z" firstAttribute="leading" secondItem="nqo-ib-9QN" secondAttribute="leadingMargin" id="8yF-h2-K7w"/>
+                            <constraint firstItem="jEK-SU-G9Z" firstAttribute="top" secondItem="f0j-cF-MUv" secondAttribute="bottom" id="Mri-ma-SbF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jEK-SU-G9Z" secondAttribute="trailing" id="fBJ-Fb-8fZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Y4-kq-Sc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6gp-9V-Tik">
+                    <rect key="frame" x="0.0" y="0.0" width="186.33333333333331" height="20.333333333333329"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <string key="text">"placeholder" / There is a lot of new language that comes into play when you start learning about classes. If you are familiar with object-oriented programming from your work in another language, this will be a quick read about how Python approaches OOP. If you are new to programming in general, there will be a lot of new ideas here. Just start reading, try out the examples on your own machine, and trust that it will start to make sense as you work your way through the examples and exercises.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </objects>
+            <point key="canvasLocation" x="1651" y="38"/>
+        </scene>
+        <!--View Controller story-->
+        <scene sceneID="jlP-3N-BYf">
+            <objects>
+                <viewController id="MAH-qg-Yec" customClass="_3_ViewController_story" customModule="mad_lips___pset02" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9jt-Wo-wgt"/>
+                        <viewControllerLayoutGuide type="bottom" id="uCu-lg-7dF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TMB-mG-ok7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lCn-gb-hpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2372" y="38"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Asl-eG-aLq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3af-oG-gDX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Zb-7d-nvs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zZD-Fx-7o9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K9g-42-n4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="268" y="38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="madlibs" width="282" height="308"/>
+    </resources>
+</document>
