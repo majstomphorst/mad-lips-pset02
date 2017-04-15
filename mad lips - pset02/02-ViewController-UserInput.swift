@@ -9,19 +9,75 @@
 import UIKit
 
 class _2_ViewController_userinput: UIViewController {
-
     
     // MARK: propertys
-    // making a list to store the users words in.
-    var words = [String]()
+    @IBOutlet weak var instructLabel: UILabel!
+    @IBOutlet weak var UserInput: UITextField!
     
-     
+    var story = Story(stream: "")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("+++++++++++02-view+++++++++++")
+        // opening the story form file on machine
+        let path = "/Users/maj/Desktop/test.txt"
+        var text = ""
+        
+        // opening the file and putting the string in text
+        do {
+            text = try String(contentsOfFile: path)
+            print(text)
+        } catch {
+            print("error")
+        }
+        
+        story = Story(stream: text)
+        
+        instructLabel.text = "give me a \(story.getNextPlaceholder()). (\(story.getPlaceholderRemainingCount()) remaing)"
+        
+       
+        
+        // send string to story
+        // get get the amount of placeholders
+        
+//        var placeholders = story.getPlaceholderCount()
+//        var nextplaceholder = story.getNextPlaceholder()
+//        print(placeholders)
+//        print(nextplaceholder)
+//        
+        story.fillInPlaceholder(word: "01")
+//        print(story.isFilledIn())
+//        
+//        
+//        print(story.getNextPlaceholder())
+//        story.fillInPlaceholder(word: "02")
+//        print(story.isFilledIn())
+//        let data = story.toString()
+//        
+//
+//        print(data)
+    
 
+        
+        
         // Do any additional setup after loading the view.
     }
 
+    
+    // MARK: actions
+    @IBAction func submite(_ sender: UIButton) {
+        // update instructLabel
+        instructLabel.text = "give me a \(story.getNextPlaceholder()). (\(story.getPlaceholderRemainingCount()) remaing)"
+        
+        // store word
+        
+        // if true create story and send it
+        
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

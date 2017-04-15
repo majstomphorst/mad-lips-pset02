@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Foundation
+// import Foundation
 
 class ViewController: UIViewController {
 
@@ -15,39 +15,39 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let path = "/Users/maj/Desktop/test.txt"
-        var text = ""
-        
-        do {
-            text = try String(contentsOfFile: path)
-            print(text)
-        } catch {
-            print("error")
-        }
-        
-        
-        let story = Story(stream: text)
-        var i = story.getPlaceholderCount()
-        print(i)
-        
-        for p in 1...i {
-            print(p)
-        }
-
-        print(story.getNextPlaceholder())
-        story.fillInPlaceholder(word: "01")
-        print(story.isFilledIn())
-        
-        
-        print(story.getNextPlaceholder())
-        story.fillInPlaceholder(word: "02")
-        print(story.isFilledIn())
-        i = story.getPlaceholderCount()
-        let data = story.toString()
-        
-        print(i)
-        print(data)
-        
+//        let path = "/Users/maj/Desktop/test.txt"
+//        var text = ""
+//        
+//        do {
+//            text = try String(contentsOfFile: path)
+//            print(text)
+//        } catch {
+//            print("error")
+//        }
+//        
+//        
+//        let story = Story(stream: text)
+//        var i = story.getPlaceholderCount()
+//        print(i)
+//        
+//        for p in 1...i {
+//            print(p)
+//        }
+//
+//        print(story.getNextPlaceholder())
+//        story.fillInPlaceholder(word: "01")
+//        print(story.isFilledIn())
+//        
+//        
+//        print(story.getNextPlaceholder())
+//        story.fillInPlaceholder(word: "02")
+//        print(story.isFilledIn())
+//        i = story.getPlaceholderCount()
+//        let data = story.toString()
+//        
+//        print(i)
+//        print(data)
+//        
     
         
         
