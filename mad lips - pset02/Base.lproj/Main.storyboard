@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mad_lips___pset02" customModuleProvider="target" sceneMemberID="viewController">
@@ -67,7 +67,7 @@
                             <constraint firstItem="XLF-vl-CtU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="xiM-mz-GuC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="eLs-Sw-40R"/>
+                    <navigationItem key="navigationItem" title="Start screen" id="eLs-Sw-40R"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jEK-SU-G9Z">
-                                <rect key="frame" x="16" y="64" width="343" height="100"/>
+                                <rect key="frame" x="16" y="64" width="343" height="135"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please give me a &quot;placeholder&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yry-z2-pVw">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -105,6 +105,13 @@
                                         <state key="normal" title="Submite"/>
                                         <connections>
                                             <action selector="submite:" destination="b7f-ev-Knz" eventType="touchUpInside" id="YfW-qI-wVy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqt-aV-hdU" userLabel="StoryTime">
+                                        <rect key="frame" x="0.0" y="105" width="343" height="30"/>
+                                        <state key="normal" title="Story Time!"/>
+                                        <connections>
+                                            <segue destination="zwA-o7-o3J" kind="show" id="ZmW-u5-oLm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -133,6 +140,42 @@
                 </label>
             </objects>
             <point key="canvasLocation" x="1651" y="38"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="O3g-8v-FNV">
+            <objects>
+                <viewController id="zwA-o7-o3J" customClass="ThirdViewController" customModule="mad_lips___pset02" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bHn-KA-j0z"/>
+                        <viewControllerLayoutGuide type="bottom" id="c0q-SY-l4g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FMH-MV-pXo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="hd4-Z7-xMJ">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hd4-Z7-xMJ" firstAttribute="top" secondItem="bHn-KA-j0z" secondAttribute="bottom" id="ASt-ea-fqt"/>
+                            <constraint firstItem="c0q-SY-l4g" firstAttribute="top" secondItem="hd4-Z7-xMJ" secondAttribute="bottom" id="HEN-A5-01b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hd4-Z7-xMJ" secondAttribute="trailing" id="h7g-Gv-vyP"/>
+                            <constraint firstItem="hd4-Z7-xMJ" firstAttribute="leading" secondItem="FMH-MV-pXo" secondAttribute="leadingMargin" id="mCP-xE-4XG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="StoryView" destination="hd4-Z7-xMJ" id="CFF-F7-bUJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHL-j5-ORo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2332" y="38"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Asl-eG-aLq">

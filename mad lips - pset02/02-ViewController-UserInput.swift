@@ -8,12 +8,13 @@
 
 import UIKit
 
-class _2_ViewController_userinput: UIViewController {
+class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
     
     // MARK: propertys
     @IBOutlet weak var instructLabel: UILabel!
     @IBOutlet weak var UserInput: UITextField!
     
+    // creating global variable
     var story = Story(stream: "")
     
     override func viewDidLoad() {
@@ -34,54 +35,44 @@ class _2_ViewController_userinput: UIViewController {
         
         story = Story(stream: text)
         
+        // creatign first instructLabel input
         instructLabel.text = "give me a \(story.getNextPlaceholder()). (\(story.getPlaceholderRemainingCount()) remaing)"
         
-       
-        
-        // send string to story
-        // get get the amount of placeholders
-        
-//        var placeholders = story.getPlaceholderCount()
-//        var nextplaceholder = story.getNextPlaceholder()
-//        print(placeholders)
-//        print(nextplaceholder)
-//        
-        story.fillInPlaceholder(word: "01")
-//        print(story.isFilledIn())
-//        
-//        
-//        print(story.getNextPlaceholder())
-//        story.fillInPlaceholder(word: "02")
-//        print(story.isFilledIn())
-//        let data = story.toString()
-//        
-//
-//        print(data)
-    
-
-        
-        
-        // Do any additional setup after loading the view.
-    }
-
+        }
     
     // MARK: actions
     @IBAction func submite(_ sender: UIButton) {
+        
+        let word = UserInput.text
+        
+        story.fillInPlaceholder(word: word!)
+        
+        if story.isFilledIn(){
+            print("go to next page")
+            print(story.toString())
+            
+            }
+        
         // update instructLabel
         instructLabel.text = "give me a \(story.getNextPlaceholder()). (\(story.getPlaceholderRemainingCount()) remaing)"
         
-        // store word
-        
-        // if true create story and send it
-        
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let thirdVC = segue.destination as? ThirdViewController {
+            
+            thirdVC.story = story.toString()
+        }
+        
+    }
     
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

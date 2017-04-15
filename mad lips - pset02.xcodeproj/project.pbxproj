@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2815C82C1EA28B1B004BCCE6 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C82B1EA28B1B004BCCE6 /* ThirdViewController.swift */; };
 		284309991E9D022E003CA21A /* 02-ViewController-UserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284309981E9D022E003CA21A /* 02-ViewController-UserInput.swift */; };
 		2899A3091E9CFEBE006464EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A3081E9CFEBE006464EC /* AppDelegate.swift */; };
 		2899A30B1E9CFEBE006464EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A30A1E9CFEBE006464EC /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2815C82B1EA28B1B004BCCE6 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ../ThirdViewController.swift; sourceTree = "<group>"; };
 		284309981E9D022E003CA21A /* 02-ViewController-UserInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "02-ViewController-UserInput.swift"; sourceTree = "<group>"; };
 		2899A3051E9CFEBE006464EC /* mad lips - pset02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mad lips - pset02.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2899A3081E9CFEBE006464EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				2899A3081E9CFEBE006464EC /* AppDelegate.swift */,
 				2899A30A1E9CFEBE006464EC /* ViewController.swift */,
 				284309981E9D022E003CA21A /* 02-ViewController-UserInput.swift */,
+				2815C82B1EA28B1B004BCCE6 /* ThirdViewController.swift */,
 				28F7AB8A1EA0D24E00E3B4CB /* assets.xcassets */,
 				2899A30C1E9CFEBE006464EC /* Main.storyboard */,
 				2899A3111E9CFEBE006464EC /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			files = (
 				2899A30B1E9CFEBE006464EC /* ViewController.swift in Sources */,
 				284309991E9D022E003CA21A /* 02-ViewController-UserInput.swift in Sources */,
+				2815C82C1EA28B1B004BCCE6 /* ThirdViewController.swift in Sources */,
 				2899A3091E9CFEBE006464EC /* AppDelegate.swift in Sources */,
 				28EE5B211E9FA85C00F6A80E /* Story.swift in Sources */,
 			);
