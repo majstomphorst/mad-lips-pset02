@@ -19,12 +19,8 @@ class ThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("thirdview")
-        print(story)
-        
         StoryView.text = story
         
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

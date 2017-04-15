@@ -20,7 +20,6 @@ class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("+++++++++++02-view+++++++++++")
         // opening the story form file on machine
         let path = "/Users/maj/Desktop/test.txt"
         var text = ""
@@ -28,7 +27,6 @@ class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
         // opening the file and putting the string in text
         do {
             text = try String(contentsOfFile: path)
-            print(text)
         } catch {
             print("error")
         }
@@ -47,15 +45,17 @@ class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
         
         story.fillInPlaceholder(word: word!)
         
-        if story.isFilledIn(){
-            print("go to next page")
-            print(story.toString())
-            
-            }
-        
         // update instructLabel
         instructLabel.text = "give me a \(story.getNextPlaceholder()). (\(story.getPlaceholderRemainingCount()) remaing)"
         
+        if story.isFilledIn(){
+            print("go to next page")
+            
+            instructLabel.text = "you may to to the next screen"
+            
+            }
+        
+        UserInput.text = ""
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

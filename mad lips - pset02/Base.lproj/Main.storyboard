@@ -27,13 +27,13 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mQZ-FJ-wRG">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="552.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="552"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madlibs" translatesAutoresizingMaskIntoConstraints="NO" id="wrp-hE-Xpz">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="276"/>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" maximumZoomScale="10" editable="NO" text="text works!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9u9-pk-srA">
-                                                <rect key="frame" x="0.0" y="276" width="375" height="276.5"/>
+                                                <rect key="frame" x="0.0" y="276" width="375" height="276"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -42,7 +42,7 @@
                                         <variation key="heightClass=compact" axis="horizontal"/>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jy4-Am-dBP">
-                                        <rect key="frame" x="0.0" y="552.5" width="375" height="50.5"/>
+                                        <rect key="frame" x="0.0" y="552" width="375" height="51"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Jy4-Am-dBP" secondAttribute="height" multiplier="207:28" id="6eu-Nr-Q1i"/>
                                         </constraints>
@@ -153,10 +153,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="hd4-Z7-xMJ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TEXT" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="hd4-Z7-xMJ">
                                 <rect key="frame" x="16" y="64" width="343" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
