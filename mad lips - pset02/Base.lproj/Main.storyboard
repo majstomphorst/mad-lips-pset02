@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,13 +26,13 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mQZ-FJ-wRG">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="552"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="573"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madlibs" translatesAutoresizingMaskIntoConstraints="NO" id="wrp-hE-Xpz">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="276"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="286.5"/>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" maximumZoomScale="10" editable="NO" text="text works!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9u9-pk-srA">
-                                                <rect key="frame" x="0.0" y="276" width="375" height="276"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" maximumZoomScale="10" editable="NO" text="text works!" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="9u9-pk-srA">
+                                                <rect key="frame" x="0.0" y="286.5" width="375" height="286.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -42,10 +41,8 @@
                                         <variation key="heightClass=compact" axis="horizontal"/>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jy4-Am-dBP">
-                                        <rect key="frame" x="0.0" y="552" width="375" height="51"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Jy4-Am-dBP" secondAttribute="height" multiplier="207:28" id="6eu-Nr-Q1i"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="573" width="375" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <segue destination="b7f-ev-Knz" kind="show" id="BZe-aU-Q2Z"/>
@@ -73,7 +70,7 @@
             </objects>
             <point key="canvasLocation" x="975.20000000000005" y="38.23088455772114"/>
         </scene>
-        <!--View Controller userinput-->
+        <!--User input-->
         <scene sceneID="zum-Jl-pRg">
             <objects>
                 <viewController id="b7f-ev-Knz" customClass="_2_ViewController_userinput" customModule="mad_lips___pset02" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,11 +91,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5B-Wl-vek">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="c5B-Wl-vek">
                                         <rect key="frame" x="0.0" y="35" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardAppearance="alert"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCk-tG-0hg">
                                         <rect key="frame" x="0.0" y="70" width="343" height="30"/>
@@ -124,24 +121,21 @@
                             <constraint firstAttribute="trailingMargin" secondItem="jEK-SU-G9Z" secondAttribute="trailing" id="fBJ-Fb-8fZ"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="User input" id="4ql-pr-iRs" userLabel="Second"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="StoryTime" destination="bqt-aV-hdU" id="Gf7-B3-0KU"/>
+                        <outlet property="Submite" destination="wCk-tG-0hg" id="CMD-Tv-Adr"/>
                         <outlet property="UserInput" destination="c5B-Wl-vek" id="N6B-Vm-jjq"/>
                         <outlet property="instructLabel" destination="yry-z2-pVw" id="rzg-yk-mOy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Y4-kq-Sc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6gp-9V-Tik">
-                    <rect key="frame" x="0.0" y="0.0" width="186.33333333333331" height="20.333333333333329"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <string key="text">"placeholder" / There is a lot of new language that comes into play when you start learning about classes. If you are familiar with object-oriented programming from your work in another language, this will be a quick read about how Python approaches OOP. If you are new to programming in general, there will be a lot of new ideas here. Just start reading, try out the examples on your own machine, and trust that it will start to make sense as you work your way through the examples and exercises.</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </objects>
             <point key="canvasLocation" x="1651" y="38"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Story time!-->
         <scene sceneID="O3g-8v-FNV">
             <objects>
                 <viewController id="zwA-o7-o3J" customClass="ThirdViewController" customModule="mad_lips___pset02" customModuleProvider="target" sceneMemberID="viewController">
@@ -154,7 +148,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TEXT" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="hd4-Z7-xMJ">
-                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <rect key="frame" x="16" y="64" width="343" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -168,13 +162,22 @@
                             <constraint firstItem="hd4-Z7-xMJ" firstAttribute="leading" secondItem="FMH-MV-pXo" secondAttribute="leadingMargin" id="mCP-xE-4XG"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Story time!" id="GKc-3R-L6C" userLabel="third">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="5ra-ZU-g6E">
+                            <connections>
+                                <action selector="Home:" destination="zwA-o7-o3J" id="NAb-oj-CqW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="StoryView" destination="hd4-Z7-xMJ" id="CFF-F7-bUJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHL-j5-ORo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2332" y="38"/>
+            <point key="canvasLocation" x="2406" y="38"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Asl-eG-aLq">

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2815C82C1EA28B1B004BCCE6 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815C82B1EA28B1B004BCCE6 /* ThirdViewController.swift */; };
+		2821832A1EA3B94B00A95449 /* storys in Resources */ = {isa = PBXBuildFile; fileRef = 282183291EA3B94B00A95449 /* storys */; };
 		284309991E9D022E003CA21A /* 02-ViewController-UserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284309981E9D022E003CA21A /* 02-ViewController-UserInput.swift */; };
 		2899A3091E9CFEBE006464EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A3081E9CFEBE006464EC /* AppDelegate.swift */; };
 		2899A30B1E9CFEBE006464EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899A30A1E9CFEBE006464EC /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		2815C82B1EA28B1B004BCCE6 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = ../ThirdViewController.swift; sourceTree = "<group>"; };
+		282183291EA3B94B00A95449 /* storys */ = {isa = PBXFileReference; lastKnownFileType = folder; path = storys; sourceTree = "<group>"; };
 		284309981E9D022E003CA21A /* 02-ViewController-UserInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "02-ViewController-UserInput.swift"; sourceTree = "<group>"; };
 		2899A3051E9CFEBE006464EC /* mad lips - pset02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mad lips - pset02.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2899A3081E9CFEBE006464EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				284309981E9D022E003CA21A /* 02-ViewController-UserInput.swift */,
 				2815C82B1EA28B1B004BCCE6 /* ThirdViewController.swift */,
 				28F7AB8A1EA0D24E00E3B4CB /* assets.xcassets */,
+				282183291EA3B94B00A95449 /* storys */,
 				2899A30C1E9CFEBE006464EC /* Main.storyboard */,
 				2899A3111E9CFEBE006464EC /* LaunchScreen.storyboard */,
 				2899A3141E9CFEBE006464EC /* Info.plist */,
@@ -135,6 +138,7 @@
 			files = (
 				2899A3131E9CFEBE006464EC /* LaunchScreen.storyboard in Resources */,
 				2899A30E1E9CFEBE006464EC /* Main.storyboard in Resources */,
+				2821832A1EA3B94B00A95449 /* storys in Resources */,
 				28F7AB8B1EA0D24E00E3B4CB /* assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5QYLX323BC;
 				INFOPLIST_FILE = "mad lips - pset02/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.mprog.mad-lips---pset02";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,6 +295,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5QYLX323BC;
 				INFOPLIST_FILE = "mad lips - pset02/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.mprog.mad-lips---pset02";
 				PRODUCT_NAME = "$(TARGET_NAME)";

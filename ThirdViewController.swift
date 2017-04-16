@@ -18,6 +18,9 @@ class ThirdViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
+        self.navigationItem.hidesBackButton = true
         
         StoryView.text = story
         
@@ -29,14 +32,17 @@ class ThirdViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
-
+    @IBAction func Home(_ sender: UIBarButtonItem) {
+        navigationController?.popToRootViewController(animated: true)
+    }
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+
 
 }
