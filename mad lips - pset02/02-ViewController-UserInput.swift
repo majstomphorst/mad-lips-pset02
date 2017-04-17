@@ -18,6 +18,7 @@ class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
     
     // creating global variable
     var story = Story(stream: "")
+    var SelectedStory = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
         StoryTime.isEnabled = false
 
         // selecting a story to be read
-        let path = Bundle.main.path(forResource: "storys/tarzan", ofType: "txt")
+        let path = Bundle.main.path(forResource: "storys/\(SelectedStory)", ofType: "txt")
         
         // creating empty string to store the story in
         var text = ""
@@ -42,7 +43,7 @@ class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
         story = Story(stream: text)
         
         // creatign first instructLabel input
-        instructLabel.text = "give me a \(story.getNextPlaceholder()). (\(story.getPlaceholderRemainingCount()) remaing)"
+        instructLabel.text = "give me a \(story.getNextPlaceholder().lowercased()). (\(story.getPlaceholderRemainingCount()) remaing)"
         
         }
     
@@ -99,7 +100,7 @@ class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 
     /*
     // MARK: - Navigation
