@@ -5,4 +5,4 @@
 With the switches on the screen you are able to hide or onhide mr.Potatohead
 
 # Screenshot
-![alt tag](https://github.com/majstomphorst/mad-lips-pset02/blob/master/doc/screenshot.jpg)
+![alt tag](mad-lips-pset02/doc/screenshot.PNG)
