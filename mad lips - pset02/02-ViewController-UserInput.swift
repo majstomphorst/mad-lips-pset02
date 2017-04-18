@@ -10,7 +10,7 @@ import UIKit
 
 class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
     
-    // MARK: propertys
+    // MARK: properties
     @IBOutlet weak var instructLabel: UILabel!
     @IBOutlet weak var UserInput: UITextField!
     @IBOutlet weak var Submite: UIButton!
@@ -23,7 +23,7 @@ class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // hide button to next screen until story is completed
+        // hides the button to go to the next screen story is completed
         StoryTime.isEnabled = false
 
         // selecting a story to be read
@@ -36,6 +36,7 @@ class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
         do {
             text = try String(contentsOfFile: path!)
         } catch {
+            // stupid error handeling
             print("error")
         }
         
@@ -44,8 +45,7 @@ class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
         
         // creatign first instructLabel input
         instructLabel.text = "give me a \(story.getNextPlaceholder().lowercased()). (\(story.getPlaceholderRemainingCount()) remaing)"
-        
-        }
+    }
     
     // MARK: actions
     @IBAction func submite(_ sender: UIButton) {
@@ -62,10 +62,10 @@ class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
         // if the story is completed
         if story.isFilledIn() {
             
-            // hiding keyboard
+            // hide keyboard
             UserInput.resignFirstResponder()
             
-            // tel user story is ready
+            // tell user story is ready
             instructLabel.text = "Your awesome story is ready!"
             
             // forcing user to go to the story
@@ -74,7 +74,7 @@ class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
             Submite.isEnabled = false
         }
         
-        // empty useer input feelde
+        // empty useer input
         UserInput.text = ""
         
     }
@@ -84,14 +84,15 @@ class _2_ViewController_userinput: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
+    // sending data to the next view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let thirdVC = segue.destination as? ThirdViewController {
             thirdVC.story = story.toString()
         }
     }
     
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print("press")
         Submite.sendActions(for: .touchUpInside)
         return false
     }

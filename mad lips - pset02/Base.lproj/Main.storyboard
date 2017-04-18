@@ -106,6 +106,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardAppearance="alert"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="b7f-ev-Knz" id="Tv6-oC-4V7"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCk-tG-0hg">
                                         <rect key="frame" x="0.0" y="70" width="728" height="30"/>

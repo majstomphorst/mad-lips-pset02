@@ -12,15 +12,18 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     @IBOutlet weak var PickerView: UIPickerView!
     
+    // creating a counter for the pickerview
     var SelectedStoryCount = 0
+    
+    // creating options for the pickerview (i wanted to read the contents of the folder but struggles)
     var array = ["clothes","dance","simple","tarzan","university"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         PickerView.delegate = self
         PickerView.dataSource = self
-        // Do any additional setup after loading the view, typically from a nib.
    }
     
     override func didReceiveMemoryWarning() {
@@ -44,6 +47,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         SelectedStoryCount = row
     }
     
+    // sending selected story to the next screen (picker view)
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let secondVC = segue.destination as? _2_ViewController_userinput {
             secondVC.SelectedStory = array[SelectedStoryCount]
